@@ -1,4 +1,4 @@
-----Thanks for fire855 & superdragonpt, who are contributing to the working CyanogenMod of MTK hardware(MT6592&MT6582).---
+----Thanks for xen0n, who are contributing to the working CyanogenMod of MTK hardware.---
 
 This is a device tree for Xiaomi Redmi_1s_TD(HM2014011) which is based on MT6582 SoC. Powered by ferhung.
 # Build
@@ -6,8 +6,7 @@ This is a device tree for Xiaomi Redmi_1s_TD(HM2014011) which is based on MT6582
 * init
   Sync CyanogenMod source:
 
-        # repo init -u git://github.com/CyanogenMod/android.git -b cm-13.0
-        
+        # repo init -u git://github.com/ferhung-mtk/android.git -b cm-13.0        
         # repo sync
 
 * full build
