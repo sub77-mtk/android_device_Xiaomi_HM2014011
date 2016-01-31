@@ -72,7 +72,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Rootdir
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.mt6582:root/fstab.mt6582 \
-    $(LOCAL_PATH)/rootdir/init.recovery.mt6582.rc:recovery/init.recovery.mt6582.rc \
+    $(LOCAL_PATH)/rootdir/init.recovery.mt6582.rc:recovery/root/init.recovery.mt6582.rc \
     $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
     $(LOCAL_PATH)/rootdir/init.mt6582_common.rc:root/init.mt6582_common.rc \
     $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
