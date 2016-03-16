@@ -112,7 +112,7 @@ RED_LED_PATH := /sys/class/leds/red/brightness
 GREEN_LED_PATH := /sys/class/leds/green/brightness
 BLUE_LED_PATH := /sys/class/leds/blue/brightness
 # Next line, fix charging-mod on power off. It needs to modify the init.cpp.
-BOARD_CHARGING_MODE_BOOTING_LPM := "/sys/class/BOOT/BOOT/boot/boot_mode" 
+BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/BOOT/BOOT/boot/boot_mode
 
 # EGL settings
 BOARD_EGL_CFG := $(LOCAL_PATH)/configs/egl.cfg
