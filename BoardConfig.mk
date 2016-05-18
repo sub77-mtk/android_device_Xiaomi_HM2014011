@@ -101,6 +101,7 @@ TW_INCLUDE_FB2PNG := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_EXTRA_LANGUAGES := true
 TW_BUILD_ZH_CN_SUPPORT := true
+TW_DEFAULT_LANGUAGE := zh_CN
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
