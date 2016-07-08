@@ -70,17 +70,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=MediaTekRIL
 
 # Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6582 \
+    init.recovery.mt6582.rc \
+    init.mt6582.rc \
+    init.mt6582_common.rc \
+    init.modem.rc \
+    ueventd.mt6582.rc \
+    init.mt6582.usb.rc \
+    enableswap.sh \
+    factory_init.rc \
+    twrp.fstab
+
+# Kernel
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.mt6582:root/fstab.mt6582 \
-    $(LOCAL_PATH)/rootdir/init.recovery.mt6582.rc:recovery/root/init.recovery.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/init.mt6582_common.rc:root/init.mt6582_common.rc \
-    $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
-    $(LOCAL_PATH)/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
-    $(LOCAL_PATH)/rootdir/enableswap.sh:root/enableswap.sh \
-    $(LOCAL_PATH)/rootdir/factory_init.rc:root/factory_init.rc \
-    $(LOCAL_PATH)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
     $(LOCAL_KERNEL):kernel
 
 # Permissions
