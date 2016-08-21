@@ -30,7 +30,7 @@ TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := HM2014011,wt93807
+# TARGET_OTA_ASSERT_DEVICE := HM2014011,wt93807
 
 # MTK HARDWARE
 BOARD_HAS_MTK_HARDWARE := true
@@ -80,6 +80,7 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/recovery.fstab
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
 # TWRP
+RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
 DEVICE_RESOLUTION := 720x1280
 TARGET_SCREEN_HEIGHT := 1280
@@ -159,5 +160,4 @@ USE_MINIKIN := true
 POLICYVERS := 26
 
 # Hack for build
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
-
+$(shell mkdir -p /and/cm-mt/out/target/product/HM2014011/obj/KERNEL_OBJ/usr)
