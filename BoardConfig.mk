@@ -3,6 +3,8 @@
 
 LOCAL_PATH := device/Xiaomi/HM2014011
 
+TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+
 # Board
 TARGET_BOARD_PLATFORM := mt6582
 TARGET_CPU_ABI := armeabi-v7a
@@ -157,7 +159,3 @@ USE_MINIKIN := true
 
 # Sepolicy hack for old kernel, our mt6582 & mt6592 version is 26.
 POLICYVERS := 26
-
-# Hack for build
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
-
